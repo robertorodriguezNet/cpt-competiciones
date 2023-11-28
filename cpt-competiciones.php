@@ -44,7 +44,7 @@ function post_competiciones() {
 		'label'                 => __( 'competicion', 'text_domain' ),
 		'description'           => __( 'Competiciones del club', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'excerpt' ),
 		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
