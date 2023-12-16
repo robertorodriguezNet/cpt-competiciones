@@ -35,5 +35,10 @@ base de datos, en el campo **post-type** de la tabla **wp_post**.
 
 ## Templates
 
+Si se quiere personalizar las vistas, hay que crear templates para cada tipo 
+de vista.
+Estos templates han de colocarse en el directorio raíz del tema activo.
+Por ejemplo, para Astra-child, los archivos se incluirían en *wp-content\themes\hello-theme-child*.
+
 El template para mostrar cada competición debe nombrarse *single-competicion.php*.
 Para la vista de archivos, el template de debe llamar *archive-competicion.php*.
