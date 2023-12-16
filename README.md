@@ -1,6 +1,9 @@
 # Custom Post Type Competiciones
 
 **Competiciones** son un tipo de post que organiza la información básica de una competición.
+
+Nombre de post: *competición*.
+
 Campos que tendrá tipo:
 
 - Título
@@ -29,3 +32,8 @@ Para modificar el post type tan solo es necesario desinstalar el plugin y volver
 Si no se ha cambiado el nombre del post type, se siguen mostrando las entradas que ya hubiera.
 Si se ha modificado el nombre del post type, habra que modificar la denominación de las entradas en la
 base de datos, en el campo **post-type** de la tabla **wp_post**.
+
+## Templates
+
+El template para mostrar cada competición debe nombrarse *single-competicion.php*.
+Para la vista de archivos, el template de debe llamar *archive-competicion.php*.
