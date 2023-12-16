@@ -60,7 +60,7 @@ function post_competiciones() {
 		'capability_type'       => 'page',
 		'show_in_rest'          => false,
 	);
-	register_post_type( 'post_competiciones', $args );
+	register_post_type( 'competiciones', $args );
 
 }
 add_action( 'init', 'post_competiciones', 0 );
@@ -78,7 +78,7 @@ add_action( 'init', 'post_competiciones', 0 );
  * Tipo = get_post_meta( get_the_ID(), 'opcion_tipo', true )
  */
 class Opciones_Para_Las_Competiciones {
-	private $config = '{"title":"Opciones para las competiciones","description":"Opciones auxiliares para las competiciones","prefix":"opcion_","domain":"opciones-para-las-competiciones","class_name":"Opciones_Para_Las_Competiciones","post-type":["post"],"context":"normal","priority":"default","cpt":"post_competiciones","fields":[{"type":"radio","label":"Campeonato","options":"provincial : Provincial\r\natonomico : Castilla y Le\u00f3n\r\nespana : Espa\u00f1a\r\neuropa : Europa","id":"opcion_campeonato"},{"type":"select","label":"Edad","default":"absoluto","options":"sub-12 : Sub 12\r\nsub-14 : Sub 14\r\nsub-16 : Sub 16\r\nsub-18 : Sub 18\r\nsub-20 : Sub 20\r\nsub-23 : Sub 23\r\nalevin : Alev\u00edn\r\ninfantil : Infantil\r\ncadete : Cadete\r\njuvenil : Juvenil\r\njunior : J\u00fanior\r\npromesa : Promesa\r\nabsoluto : Absoluto\r\nmaster : M\u00e1ster","id":"opcion_edad"},{"type":"radio","label":"Equipo","options":"masculino : Masculino\r\nfemenino : Femenino\r\nambos : Ambos","id":"opcion_equipo"},{"type":"date","label":"Fecha","max":"2016-10-31","min":"1990-11-01","id":"opcion_fecha"},{"type":"text","label":"Lugar","id":"opcion_lugar"},{"type":"radio","label":"Tipo","options":"aire-libre : Aire libre\r\npista-cubierta : Pista cubierta\r\ncross : Cross\r\nruta : Ruta","id":"opcion_tipo"}]}';
+	private $config = '{"title":"Opciones para las competiciones","description":"Opciones auxiliares para las competiciones","prefix":"opcion_","domain":"opciones-para-las-competiciones","class_name":"Opciones_Para_Las_Competiciones","post-type":["post"],"context":"normal","priority":"default","cpt":"post_competiciones","fields":[{"type":"radio","label":"Campeonato","options":"provincial : Provincial\r\natonomico : Castilla y Le\u00f3n\r\nespana : Espa\u00f1a\r\neuropa : Europa","id":"opcion_campeonato"},{"type":"select","label":"Edad","default":"absoluto","options":"sub-12 : Sub 12\r\nsub-14 : Sub 14\r\nsub-16 : Sub 16\r\nsub-18 : Sub 18\r\nsub-20 : Sub 20\r\nsub-23 : Sub 23\r\nalevin : Alev\u00edn\r\ninfantil : Infantil\r\ncadete : Cadete\r\njuvenil : Juvenil\r\njunior : J\u00fanior\r\npromesa : Promesa\r\nabsoluto : Absoluto\r\nmaster : M\u00e1ster\r\nvarias : Varias","id":"opcion_edad"},{"type":"radio","label":"Equipo","options":"masculino : Masculino\r\nfemenino : Femenino\r\nambos : Ambos","id":"opcion_equipo"},{"type":"date","label":"Fecha","max":"2016-10-31","min":"1990-11-01","id":"opcion_fecha"},{"type":"text","label":"Lugar","id":"opcion_lugar"},{"type":"radio","label":"Tipo","options":"aire-libre : Aire libre\r\npista-cubierta : Pista cubierta\r\ncross : Cross\r\nruta : Ruta","id":"opcion_tipo"}]}';
 
 	public function __construct() {
 		$this->config = json_decode( $this->config, true );
