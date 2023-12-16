@@ -10,3 +10,7 @@ Campos que tendrá tipo:
 - Fecha
 - Lugar
 - Tipo: tipo de competición (pista, pista cubierta, ...)
+
+## Instalación
+
+Descargar el archivo zip ("cpt-competiciones.zip") e instarlo como plugin.
